@@ -1,7 +1,7 @@
 {
-  "name": "@briangershon/npm-package-minimal",
-  "version": "1.0.2",
-  "description": "Example of publishing an NPM module to Github package repository.",
+  "name": "@briangershon/team-rotation-faunadb",
+  "version": "0.0.1",
+  "description": "Keep track of active team member, and pick next person to be active on a rotating basis. Data stored in FaunaDB.",
   "main": "src/index.js",
   "scripts": {
     "test": "jest specs --watch",
@@ -11,16 +11,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/briangershon/npm-package-minimal.git"
+    "url": "https://github.com/briangershon/team-rotation-faunadb.git"
   },
   "author": "Brian Gershon",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/briangershon/npm-package-minimal/issues"
-  },
-  "homepage": "https://github.com/briangershon/npm-package-minimal",
-  "dependencies": {
-    "cool-ascii-faces": "^1.3.4",
+  "devDependencies": {
     "jest": "^26.5.3"
   }
 }
