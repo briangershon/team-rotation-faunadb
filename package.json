@@ -1,0 +1,26 @@
+{
+  "name": "@briangershon/npm-package-minimal",
+  "version": "1.0.2",
+  "description": "Example of publishing an NPM module to Github package repository.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest specs --watch",
+    "test-ci": "jest specs",
+    "preversion": "npm run test-ci",
+    "postversion": "git push && git push --follow-tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/briangershon/npm-package-minimal.git"
+  },
+  "author": "Brian Gershon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/briangershon/npm-package-minimal/issues"
+  },
+  "homepage": "https://github.com/briangershon/npm-package-minimal",
+  "dependencies": {
+    "cool-ascii-faces": "^1.3.4",
+    "jest": "^26.5.3"
+  }
+}
