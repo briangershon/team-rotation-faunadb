@@ -16,7 +16,7 @@ jobs:
     - run: npm run create-database
       env:
         FAUNADB_SECRET: ${{ secrets.FAUNADB_SECRET }}
-  - run: npm run test-ci
+    - run: npm run test-ci
       env:
         FAUNADB_SECRET: ${{ secrets.FAUNADB_SECRET }}
     - run: npm publish
