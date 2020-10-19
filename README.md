@@ -27,6 +27,8 @@ First, create a new FaunaDB database and setup a key with `server` role for that
 
 ## To release new version of this package
 
+    Ensure you add `FAUNDAB_SECRET` as a Github Secret in this repo so Github Actions run tests ok.
+
     npm version patch -s -m "my release"
     # `postversion` hook will then push to Github
     
