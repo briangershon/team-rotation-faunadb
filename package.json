@@ -1,6 +1,6 @@
 {
   "name": "@briangershon/team-rotation-faunadb",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Keep track of active team member, and pick next person to be active on a rotating basis. Data stored in FaunaDB.",
   "main": "src/index.js",
   "scripts": {
