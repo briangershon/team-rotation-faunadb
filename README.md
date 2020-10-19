@@ -6,6 +6,18 @@ For example, each week, pick a new person on the team to merge Renovate PRs.
 
 Ensures each person goes in order and tracks how many times person was picked.
 
+## How to run tests
+
+These tests run against a live test FaunaDB database.
+
+First, create a new FaunaDB database and setup a key with `server` role for that database. Use key below:
+
+    # create collections and indexes
+    FAUNADB_SECRET="" npm run create-database
+
+    # run tests
+    FAUNADB_SECRET="" npm test
+
 ## How to use this package in your own application
 
     # create your own personal github token with `repo` and `read:packages` scopes

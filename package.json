@@ -4,6 +4,7 @@
   "description": "Keep track of active team member, and pick next person to be active on a rotating basis. Data stored in FaunaDB.",
   "main": "src/index.js",
   "scripts": {
+    "create-database": "node ./scripts/createDatabase.js",
     "test": "jest specs --watch",
     "test-ci": "jest specs",
     "preversion": "npm run test-ci",
@@ -17,5 +18,8 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^26.5.3"
+  },
+  "dependencies": {
+    "faunadb": "^3.0.1"
   }
 }
